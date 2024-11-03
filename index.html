@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess Game</title>
+    
+    <!-- Chess libraries -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chessboard-js/1.0.0/chessboard-1.0.0.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chess.js/0.10.3/chess.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chessboard-js/1.0.0/chessboard-1.0.0.min.js"></script>
+    
+    <!-- Your custom styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="controls">
+        <div id="player-color">Connecting...</div>
+        <div id="turn-indicator">White's Turn</div>
+        <button onclick="restartGame()">Restart Game</button>
+        <div id="move-history" hidden></div>
+    </div>
+    <div id="game-container">
+        <div id="board"></div>
+    </div>
+
+    <div id="chat">
+        <div id="messages"></div>
+        <input type="text" id="messageInput" placeholder="Type your message...">
+        <button onclick="sendMessage()">Send</button>
+    </div>
+
+    <!-- Your game script -->
+    <script src="script.js"></script>
+</body>
+</html>
